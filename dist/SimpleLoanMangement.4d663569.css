@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #2c3e50;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.navbar a {
+  color: #ecf0f1;
+  border-radius: 5px;
+  padding: .8rem 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+  background: #3498db;
+  transform: translateY(-2px);
+}
+
+.container {
+  backdrop-filter: blur(10px);
+  background: #fffffff2;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 5px 25px #0000001a;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.section {
+  background: #fff;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  transition: all .3s;
+  box-shadow: 0 2px 15px #0000000d;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px #0000001a;
+}
+
+.admin-section {
+  border-left: 4px solid #e74c3c;
+}
+
+input {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  width: 200px;
+  margin-right: 1rem;
+  padding: .8rem;
+  font-size: 1rem;
+  transition: all .3s;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px #3498db4d;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background: #3498db;
+  border: none;
+  border-radius: 6px;
+  padding: .8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px #0003;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#loan-status, #request-status, #repay-status, #fund-status, #approve-status, #withdraw-status {
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: .8rem;
+  font-weight: 500;
+  animation: .3s fadeIn;
+  display: none;
+}
+
+#account-info {
+  background: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+#account-info p {
+  color: #7f8c8d;
+  margin: .5rem 0;
+}
+
+#account-info span {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+#all-loans {
+  background: #f8f9fa;
+  border-radius: 6px;
+  max-height: 300px;
+  margin-top: 1rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#all-loans p {
+  background: #fff;
+  border-radius: 5px;
+  margin: .5rem 0;
+  padding: .8rem;
+  box-shadow: 0 1px 5px #0000000d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert {
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 1rem;
+  animation: .3s fadeIn;
+  display: none;
+}
+
+.alert-success {
+  color: #fff;
+  background: #2ecc71;
+}
+
+.alert-error {
+  color: #fff;
+  background: #e74c3c;
+}
+
+@media (width <= 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .navbar a {
+    padding: .6rem 1rem;
+  }
+}
+/*# sourceMappingURL=SimpleLoanMangement.4d663569.css.map */
