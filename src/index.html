@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Loan Management - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./borrower.html">Borrower</a>
+        <a href="./admin.html">Admin</a>
+        <a href="./loans.html">All Loans</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to Simple Loan Management</h1>
+        <div id="account-info">
+            <p>Connected Account: <span id="account">Not connected</span></p>
+            <p>Admin Address: <span id="admin">Not connected</span></p>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+        </div>
+        <div id="alert-box" class="alert"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

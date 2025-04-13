@@ -1,0 +1,170 @@
+/* Body Styling with Animated Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(-45deg, #f9d423, #ff4e50, #1e90ff, #76b852);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: #333;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #ffdd57;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.navbar a:hover {
+    background: #ffdd57;
+    color: #000;
+    box-shadow: 0 0 10px #ffdd57;
+}
+
+/* Main Container */
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #ffffffd0;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #444;
+    font-size: 1.5rem;
+}
+
+/* Section Styling */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    background-color: #fffdfd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.admin-section {
+    border-color: #ff6f61;
+    background: #ffeaea;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    width: 180px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+input:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 8px rgba(30,144,255,0.5);
+    background: #f0f8ff;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+button:hover {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4b2b;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Loan List Styling */
+#all-loans {
+    margin-top: 15px;
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+#all-loans p {
+    margin: 8px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid #1e90ff;
+    border-radius: 6px;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+/* Status Tags */
+#loan-status,
+#request-status,
+#repay-status,
+#fund-status,
+#approve-status,
+#withdraw-status {
+    font-weight: bold;
+    color: #2b2b2b;
+    background: #dff9fb;
+    padding: 8px;
+    border-left: 4px solid #22a6b3;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}

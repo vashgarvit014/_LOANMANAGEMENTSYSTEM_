@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrower - Simple Loan Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./borrower.html">Borrower</a>
+        <a href="./admin.html">Admin</a>
+        <a href="./loans.html">All Loans</a>
+    </nav>
+    <div class="container">
+        <div id="account-info">
+            <p>Connected Account: <span id="account">Not connected</span></p>
+            <p>Admin Address: <span id="admin">Not connected</span></p>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+        </div>
+        <h1>Borrower Dashboard</h1>
+        
+        <div class="section">
+            <h2>Request Loan</h2>
+            <label for="loan-amount">Loan Amount (in EDU):</label>
+            <input type="number" id="loan-amount" step="0.01" placeholder="e.g., 1 EDU">
+            <button onclick="requestLoan()">Request Loan</button>
+            <p id="request-status"></p>
+        </div>
+
+        <div class="section">
+            <h2>Loan Status</h2>
+            <button onclick="checkLoanStatus()">Check My Status</button>
+            <button onclick="checkExistingLoan()">Check Existing Loan</button>
+            <p id="loan-status"></p>
+        </div>
+
+        <div class="section">
+            <h2>Repay Loan</h2>
+            <label for="repay-amount">Repayment Amount (in EDU):</label>
+            <input type="number" id="repay-amount" step="0.01" placeholder="e.g., 1 EDU">
+            <button onclick="repayLoan()">Repay Loan</button>
+            <p id="repay-status"></p>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

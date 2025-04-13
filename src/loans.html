@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Loans - Simple Loan Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./borrower.html">Borrower</a>
+        <a href="./admin.html">Admin</a>
+        <a href="./loans.html">All Loans</a>
+    </nav>
+    <div class="container">
+        <div id="account-info">
+            <p>Connected Account: <span id="account">Not connected</span></p>
+            <p>Admin Address: <span id="admin">Not connected</span></p>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+        </div>
+        <h1>All Loan Requests</h1>
+        <div class="section">
+            <button onclick="getAllLoans()">View All Loans</button>
+            <div id="all-loans">
+                <p>Click "View All Loans" to see the list of loan requests.</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>

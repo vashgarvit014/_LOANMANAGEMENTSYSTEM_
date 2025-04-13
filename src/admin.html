@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Simple Loan Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./borrower.html">Borrower</a>
+        <a href="./admin.html">Admin</a>
+        <a href="./loans.html">All Loans</a>
+    </nav>
+    <div class="container">
+        <div id="account-info">
+            <p>Connected Account: <span id="account">Not connected</span></p>
+            <p>Admin Address: <span id="admin">Not connected</span></p>
+            <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+        </div>
+        <h1>Admin Dashboard</h1>
+        <div class="section admin-section">
+            <h2>Fund Contract</h2>
+            <label for="fund-amount">Amount to Fund (in EDU):</label>
+            <input type="number" id="fund-amount" step="0.01" placeholder="e.g., 1 EDU">
+            <button onclick="fundContract()">Fund Contract</button>
+            <p id="fund-status"></p>
+        </div>
+        <div class="section admin-section">
+            <h2>Approve Loan</h2>
+            <label for="loan-id">Loan ID:</label>
+            <input type="number" id="loan-id" placeholder="e.g., 0">
+            <button onclick="approveLoan()">Approve Loan</button>
+            <p id="approve-status"></p>
+        </div>
+        <div class="section admin-section">
+            <h2>Withdraw Funds</h2>
+            <label for="withdraw-amount">Amount to Withdraw (in EDU):</label>
+            <input type="number" id="withdraw-amount" step="0.01" placeholder="e.g., 1 EDU">
+            <button onclick="withdrawFunds()">Withdraw Funds</button>
+            <p id="withdraw-status"></p>
+        </div>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
